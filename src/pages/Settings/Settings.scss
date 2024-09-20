@@ -1,0 +1,616 @@
+.cont {
+  width: 100%;
+  position: relative;
+  .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0d30ac;
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+  .Main {
+    .Header {
+      .Reset {
+        margin-top: 0.9%;
+        text-align: center;
+        button {
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 700;
+          word-wrap: break-word;
+          width: 10vw;
+          height: 5vh;
+          background: #7e9ddb;
+          border-radius: 8px;
+          border: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .box {
+        padding: 1.2% 3%;
+        margin-top: 2%;
+        border-radius: 14px;
+        border: 3px solid #4370cb3c;
+        .banner {
+          display: flex;
+          justify-content: space-between;
+          margin: 1% 0 2% 0;
+          .referral {
+            display: flex;
+            gap: 5;
+            align-items: center;
+            p {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 5px;
+              height: 5vh;
+              width: 5vw;
+              border-radius: 10px;
+              font-size: 1.1rem;
+              font-weight: 600;
+              border: 1px solid #0d30ac;
+              color: #0d30ac;
+            }
+          }
+
+          .profile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 28vw;
+            div {
+              div {
+                position: relative;
+                .profileimage {
+                  height: 7vw;
+                  width: 7vw;
+                  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+                  border-radius: 70%;
+                  border: 2px white solid;
+                }
+                .cameraIcon {
+                  font-size: 1.6rem;
+                  position: absolute;
+                  bottom: 5%;
+                  left: 40%;
+                  opacity: 0.6;
+                }
+              }
+            }
+
+            .profiletxt {
+              .profilename {
+                color: #0d30ac;
+                font-size: 1.9rem;
+                font-weight: 600;
+              }
+
+              .profilesubtext {
+                color: #4371cb;
+                font-size: 1vw;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+
+        .details {
+          flex-grow: 1;
+          margin-left: 4%;
+          .double {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            margin-top: 1.5%;
+            .doublecontent {
+              width: 34vw;
+              display: flex;
+              justify-content: space-between;
+
+              .input1 {
+                flex-grow: 1;
+                input {
+                  width: 100%;
+                  height: 4.5vh;
+                }
+              }
+            }
+          }
+
+          .single {
+            display: flex;
+            margin-top: 2%;
+            justify-content: space-between;
+            height: auto;
+            width: 100%;
+
+            .inputfield {
+              flex-grow: 1;
+
+              input {
+                width: 100%;
+                height: 4.5vh;
+              }
+            }
+          }
+
+          .rowlarge {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            margin-top: 2%;
+
+            .inputlarge {
+              flex-grow: 1;
+
+              textarea {
+                width: 100%;
+                height: 9vh;
+                padding-top: 1%;
+              }
+            }
+          }
+        }
+        .profilebtns {
+          display: flex;
+          justify-content: center;
+          margin-top: 1.5%;
+          .cnclbtn {
+            button {
+              width: 5.5vw;
+              height: 4.5vh;
+              background: white;
+              border-radius: 8px;
+              border: 0.5px #7e9ddb solid;
+              color: #7e9ddb;
+              font-size: 1rem;
+              font-weight: 600;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .sbmtbtn {
+            margin-left: 3%;
+            button {
+              width: 5.5vw;
+              height: 4.5vh;
+              background: #7e9ddb;
+              border-radius: 8px;
+              color: white;
+              border: none;
+              font-size: 1rem;
+              font-weight: 400;
+              word-wrap: break-word;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .resetPass {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(22, 22, 22, 0.402);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .label1 {
+    color: #7e9ddb;
+    font-size: 1rem;
+    width: 8vw;
+    font-weight: 500;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+  }
+  input,
+  textarea {
+    padding-left: 15px;
+    border: 1px solid transparent;
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #7e7e7e;
+    background: white;
+    box-shadow: 0px 0.7px 1px 1px rgba(0, 0, 0, 0.25);
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: none;
+
+    &:focus {
+      outline: 1px solid #7e9ddb;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .cont {
+    .date {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    .Main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .Header {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .Reset {
+          margin-left: 0;
+          margin-bottom: 0.5%;
+          button {
+            font-size: 1rem;
+            width: 30vw;
+            height: 4vh;
+          }
+        }
+
+        .box {
+          padding: 4% 3%;
+          background-color: #c0d5ff74;
+          width: 100%;
+          margin-top: 3%;
+          border-radius: 20px;
+          margin-bottom: 5%;
+          .banner {
+            .referral {
+              p {
+                height: 3vh;
+                width: 9vw;
+                font-size: 1.1rem;
+              }
+            }
+
+            .profile {
+              width: 40vw;
+              div {
+                div {
+                  position: relative;
+                  .profileimage {
+                    height: 10vw;
+                    width: 10vw;
+                  }
+                  .cameraIcon {
+                    font-size: 1.2rem;
+                    bottom: 5%;
+                    left: 45%;
+                  }
+                }
+              }
+              .profiletxt {
+                .profilename {
+                  font-size: 2rem;
+                }
+
+                .profilesubtext {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+          .details {
+            margin-left: 0;
+            .double {
+              gap: 20px;
+              width: 100%;
+              height: auto;
+              margin-top: 1.5%;
+              .doublecontent {
+                width: 100%;
+                flex-direction: column;
+                .input1 {
+                  input {
+                    width: 100%;
+                    max-width: 100%;
+                    height: 4vh;
+                  }
+                }
+              }
+            }
+            .row23 {
+              display: flex;
+              flex-direction: row !important;
+              .doublecontent {
+                width: 100%;
+              }
+            }
+            .single {
+              flex-direction: column;
+              width: 100%;
+              .inputfield {
+                input {
+                  width: 100%;
+                  height: 4vh;
+                  max-width: 100%;
+                }
+              }
+            }
+
+            .rowlarge {
+              flex-direction: column;
+              width: 100%;
+
+              .inputlarge {
+                textarea {
+                  width: 100%;
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+          .profilebtns {
+            margin-bottom: 2%;
+            font-size: 1rem;
+            .cnclbtn {
+              button {
+                width: 16vw;
+                height: 4vh;
+              }
+            }
+
+            .sbmtbtn {
+              button {
+                width: 16vw;
+                height: 4vh;
+              }
+            }
+          }
+        }
+      }
+    }
+    .label1 {
+      font-size: 1.2rem;
+      width: 100%;
+      padding-top: 0.5%;
+      margin-bottom: 1%;
+    }
+    input,
+    textarea {
+      font-size: 1.2rem;
+    }
+  }
+}
+@media only screen and (max-width: 820px) {
+  .cont {
+    .Main {
+      .Header {
+        .box {
+          .banner {
+            .profile {
+              width: 50vw;
+              .profiletxt {
+                .profilename {
+                  font-size: 1.6rem;
+                }
+
+                .profilesubtext {
+                  font-size: 0.95rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .label1 {
+      font-size: 1rem;
+    }
+    input,
+    textarea {
+      font-size: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cont {
+    width: 100vw;
+    height: 100%;
+    margin-left: 0;
+    .date {
+      h1 {
+        font-size: 1.3rem;
+      }
+      p {
+        display: none;
+      }
+    }
+    .Main {
+      .Header {
+        .Reset {
+          button {
+            width: 50vw;
+            height: 5vh;
+          }
+        }
+
+        .box {
+          width: 90vw;
+          .banner {
+            .referral {
+              div {
+                flex-direction: column;
+                p {
+                  height: 3.2vh;
+                  width: 16vw;
+                  border-radius: 8px;
+                  font-size: 1rem;
+                }
+                div {
+                  font-size: 0.6rem;
+                  align-items: center;
+                }
+              }
+            }
+
+            .profile {
+              width: 60vw;
+              div {
+                div {
+                  position: relative;
+                  .profileimage {
+                    height: 12vw;
+                    width: 12vw;
+                  }
+                  .cameraIcon {
+                    font-size: 1rem;
+                    left: 35%;
+                  }
+                }
+              }
+              .profiletxt {
+                .profilename {
+                  font-size: 1.2rem;
+                }
+                .profilesubtext {
+                  font-size: 0.6rem;
+                }
+              }
+            }
+          }
+          .details {
+            .double {
+              gap: 10px;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 100%;
+              height: auto;
+              .doublecontent {
+                .input1 {
+                  input {
+                    height: 4.5vh;
+                  }
+                }
+              }
+            }
+            .row23 {
+              .doublecontent {
+                width: 46%;
+              }
+            }
+          }
+          .profilebtns {
+            margin-bottom: 3%;
+            .cnclbtn {
+              button {
+                width: 20vw;
+                height: 4vh;
+              }
+            }
+
+            .sbmtbtn {
+              button {
+                width: 20vw;
+                height: 4vh;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    input,
+    textarea {
+      margin-top: 0.9%;
+      margin-bottom: 2%;
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .cont {
+    .date {
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+    .Main {
+      .Header {
+        .Reset {
+          button {
+            height: 4vh;
+            font-size: 0.9rem;
+          }
+        }
+
+        .box {
+          width: 95vw;
+          .banner {
+            .referral {
+              div {
+                p {
+                  height: 3.2vh;
+                  width: 20vw;
+                  font-size: 0.9rem;
+                }
+              }
+            }
+
+            .profile {
+              flex-grow: 1;
+              div {
+                div {
+                  .cameraIcon {
+                    font-size: 0.8rem;
+                    left: 34%;
+                  }
+                }
+              }
+            }
+          }
+          .details {
+            .double {
+              gap: 8px;
+            }
+          }
+          .profilebtns {
+            .cnclbtn {
+              button {
+                height: 9vw;
+              }
+            }
+
+            .sbmtbtn {
+              button {
+                height: 9vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    input {
+      height: 11vw !important;
+    }
+    input,
+    textarea {
+      margin-top: 0.2%;
+      margin-bottom: 2%;
+      padding: 1% 3%;
+    }
+  }
+}

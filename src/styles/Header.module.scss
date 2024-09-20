@@ -1,0 +1,33 @@
+.rootHeader {
+  height: 10vh; /* Use viewport height for responsive height */
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #b3c4ea;
+  align-items: center;
+  padding: 2%; /* Use viewport width for responsive padding */
+  color: #0d30ac;
+  .icon {
+    font-size: 3rem;
+  }
+  .greet {
+    width: 40vw;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: right;
+  }
+  @media only screen and (max-width: 450px) {
+    padding: 2% 3%;
+    height: 20vw;
+    .icon {
+      font-size: 1.8rem;
+    }
+    .greet {
+      width: 100%;
+      font-size: 1.2rem;
+      .date {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

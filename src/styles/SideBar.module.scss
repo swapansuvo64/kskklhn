@@ -1,0 +1,110 @@
+.rootSidebar {
+  height: 100%;
+  width: 100%;
+
+  .sidebar {
+    background-color: #b3c4ea;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+
+    a {
+      width: 100%;
+      height: 15%;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0 10px;
+      margin-bottom: 0.2vw;
+
+      .icon {
+        width: 32%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          font-size: 1.4rem;
+        }
+      }
+
+      .option {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        font-weight: 600;
+        text-align: left;
+        font-size: 0.9rem;
+        color: #0d30ac;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .selectedOption {
+      background-color: white;
+      font-size: 2vw;
+      border-radius: 10px;
+
+      .icon {
+        color: #0d30ac;
+      }
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    .sidebar {
+      a {
+        height: 12%;
+        .icon {
+          width: 24%;
+          svg {
+            font-size: 1.8rem;
+          }
+        }
+        .option {
+          margin-left: 5%;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    /* Add styling for the bottom placement and curved borders on mobile screens */
+    @media only screen and (max-width: 480px) {
+      .sidebar {
+        a {
+          height: 12%;
+          .icon {
+            width: 24%;
+            svg {
+              font-size: 1.5rem;
+            }
+          }
+          .option {
+            margin-left: 5%;
+            font-size: 0.95rem;
+          }
+        }
+      }
+      @media only screen and (max-width: 380px) {
+        .sidebar {
+          a {
+            height: 13%;
+            .icon {
+              svg {
+                font-size: 1.3rem;
+              }
+            }
+            .option {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

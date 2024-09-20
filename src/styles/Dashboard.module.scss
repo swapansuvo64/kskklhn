@@ -1,0 +1,228 @@
+.rootMain {
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding: 3%;
+  flex-direction: row;
+  justify-content: space-around;
+  .left {
+    width: 70%;
+    height: 58vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    // height: 100%;
+    // gap: 8px;
+    // overflow: scroll;
+    .welcomeCard {
+      .date {
+        display: none;
+      }
+    }
+    .searchBarNotificationContainer {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 2% auto;
+      .searchBarContainer {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        border: 1px solid #0d30ac;
+        border-radius: 10px;
+        padding: 5px;
+        height: 5vh;
+        .searchIconContainer {
+          border-radius: 50%;
+          padding: 5px;
+          margin: 2%;
+        }
+
+        .searchInput {
+          font-size: 1rem;
+          width: 100%;
+          border: none;
+          outline: none;
+          box-shadow: none;
+          padding: 5px;
+          margin-left: 5px;
+        }
+      }
+
+      .notificationIconContainer {
+        margin-left: 3%;
+        border-radius: 50%;
+        background-color: #0d30ac;
+        width: 2.5vw;
+        height: 2.5vw;
+      }
+    }
+    .Activitytitle {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #0d30ac;
+    }
+    .graphs {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      font-size: 14px;
+      flex-grow: 1;
+      overflow: hidden;
+      margin: 2% auto;
+      .leftGraph {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-direction: column;
+        background: linear-gradient(
+          123.33deg,
+          #7fa5ed -88.05%,
+          #0d30ac 167.83%
+        );
+        border-radius: 22px;
+        padding: 10px 20px 25px 20px;
+      }
+
+      .rightGraph {
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+          123.33deg,
+          #7fa5ed -88.05%,
+          #0d30ac 167.83%
+        );
+        border-radius: 22px;
+        padding: 5px 25px;
+        padding-top: 0;
+      }
+    }
+    .clientList {
+      height: 29vw;
+    }
+  }
+
+  .right {
+    width: 20%;
+    height: 58vw;
+    display: flex;
+    flex-direction: column;
+
+    .exercises {
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .date {
+      color: #0d30ac;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    .left {
+      width: 100%;
+      height: auto;
+      .searchBarNotificationContainer {
+        .searchBarContainer {
+          height: 4.5vh;
+          .searchIconContainer {
+            margin: 2%;
+          }
+          .searchInput {
+            font-size: 1.2rem;
+          }
+        }
+
+        .notificationIconContainer {
+          margin-left: 3%;
+          width: 7vw;
+          height: 7vw;
+          svg {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .Activitytitle {
+        font-size: 1.8rem;
+        margin-left: 0;
+      }
+      .clientList {
+        height: 42vw;
+      }
+    }
+    .right {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      .date {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    .left {
+      .clientList {
+        height: 46vw;
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .left {
+      width: 100%;
+      .welcomeCard {
+        display: flex;
+        .date {
+          display: block;
+          font-size: 0.9rem;
+          color: #0d30ac;
+          text-align: center;
+        }
+      }
+      .searchBarNotificationContainer {
+        .searchBarContainer {
+          height: 10vw;
+          .searchInput {
+            font-size: 1rem;
+          }
+        }
+
+        .notificationIconContainer {
+          margin-left: 3%;
+          width: 10vw;
+          height: 10vw;
+          svg {
+            font-size: 1rem;
+          }
+        }
+      }
+      .Activitytitle {
+        font-size: 1.3rem;
+      }
+      .graphs {
+        flex-direction: column;
+        .leftGraph {
+          width: 100%;
+          padding: 2% 4%;
+        }
+        .rightGraph {
+          width: 100%;
+          padding: 2% 4%;
+        }
+      }
+      .clientList {
+        height: 60vw;
+        margin-top: 3%;
+      }
+    }
+    .right {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.lineChart {
+  background: linear-gradient(123.33deg, #7fa5ed -88.05%, #0d30ac 167.83%);
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.exercisesButton {
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  align-items: center;
+  gap: 10px;
+  color: blue;
+  z-index: 2;
+}
+.exercisesTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  span {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .exercisesButton {
+    select {
+      font-size: 0.9rem;
+      height: 2.4vh;
+    }
+  }
+}
+@media only screen and (max-width: 820px) {
+  .lineChart {
+    gap: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .exercisesButton {
+    select {
+      font-size: 0.9rem;
+      height: 3vh;
+      border-radius: 30px;
+    }
+  }
+
+  .exercisesTop {
+    span {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .lineChart {
+    gap: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .exercisesButton {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .exercisesTop {
+    /* padding-left: 5px; */
+    padding: 0;
+    span {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+}
